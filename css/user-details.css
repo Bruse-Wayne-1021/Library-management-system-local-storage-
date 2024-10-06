@@ -1,0 +1,137 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  background:url(../img/blur_background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover; 
+  color: #333;
+}
+
+.navbar{
+  background: rgb(68, 36, 9);
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navdiv{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo a{
+
+  font-size: 35px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+  display: inline-block;
+  
+}
+li a{
+  color: white;
+  font-size: 15px;
+  margin-right: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+li a:hover{
+  color:#1b1b1b;
+  background-color:#f1f1f1;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+
+
+
+header {
+  background-color: rgb(68, 36, 9); 
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+
+.table-container {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: rgb(68, 36, 9); 
+  color: white;
+}
+
+tr:hover {
+  background-color: #f1f1f1; 
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #ff4d4d; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff1a1a; 
+}
+ /* Add some basic styling */
+ .pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+.pagination button {
+  margin: 0 2px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #494bac;
+}

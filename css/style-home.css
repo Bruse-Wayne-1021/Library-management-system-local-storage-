@@ -1,0 +1,412 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background:url(../img/blur_background.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+
+button {
+    padding: 5px 10px;
+    background-color: #ff4d4d; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ff1a1a; 
+  }
+
+
+
+header {
+    background-color: rgb(68, 36, 9);
+    color: #ffffff; 
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    justify-content: space-between;
+    border-bottom: 3px solid rgb(68, 36, 9); 
+}
+
+header .logo {
+    width: 50px; 
+    height: auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #ffffff; 
+    flex: 1; 
+}
+
+header nav {
+    display: flex;
+    gap: 20px; 
+}
+
+header nav a {
+    color: #ffffff; 
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 10px;
+    border-radius: 5px; 
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav a:hover,
+header nav a:focus {
+    background-color: #f1f1f1; 
+    color: black; 
+}
+
+h2{
+    text-align: center;
+}
+main {
+    padding: 20px;
+}
+
+#book-display {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#books-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; 
+}
+
+.book-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(25% - 20px);
+    transition: transform 0.2s;
+    text-align: center; 
+}
+
+.book-box:hover {
+    transform: scale(1.05);
+}
+
+.book-img {
+    width: 100%;
+    height: 300px;
+}
+
+.book-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.book-title {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.book-author, .book-year {
+    color: #555;
+    margin: 5px 0;
+}
+
+.borrow-btn {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.borrow-btn:hover {
+    background-color: #0056b3;
+}
+/* Pagination Controls */
+#pagination-controls {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#pagination-controls button {
+    background-color: #173c64;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    margin: 0 5px;
+}
+
+#pagination-controls button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#pagination-controls span {
+    font-size: 1em;
+    margin: 0 10px;
+}
+
+footer {
+    background-color: rgb(68, 36, 9); 
+    color: #ffffff; 
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; 
+}
+
+.footer-section {
+    margin: 10px 0;
+}
+
+.contact-info p,
+.social-media p,
+.copyright p {
+    margin: 5px 0;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px; 
+}
+
+.social-icon {
+    display: inline-block;
+    width: 30px; 
+    height: 30px; 
+    background-color: #ffffff; 
+    color: #001f3f; 
+    text-align: center;
+    line-height: 30px; 
+    border-radius: 50%; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #004080; 
+    color: #ffffff; 
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+    }
+
+    .footer-section {
+        margin: 0;
+    }
+
+    nav img {
+        margin-bottom: 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-photo-nav {
+        width: 30px;
+        height: 30px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+}
+
+
+/* ////////////// */
+
+.dicision {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"],
+.login-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login-container input:focus,
+.login-container select:focus {
+    border-color: #00c3d4;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 195, 212, 0.5);
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00c3d4;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #00a5b3;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+    opacity: 0;
+    /* Start hidden */
+    transition: opacity 0.5s ease;
+    /* Transition effect */
+}
+
+.modal.show {
+    display: block;
+    /* Show modal */
+    opacity: 1;
+    /* Fade in */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.tabs a {
+    padding: 10px;
+    background-color: #e5e7eb;
+    color: #555;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.tabs a:hover {
+    background-color: #00c3d4;
+    color: white;
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .cancelbtn {
+        width: 100%;
+    }
+}
